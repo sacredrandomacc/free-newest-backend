@@ -1,19 +1,54 @@
-Aight, here’s the simple HTML file:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Newest Backend</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-[Download open_3_tabs.html](sandbox:/mnt/data/open_3_tabs.html)
+    button {
+      background: #5865f2;
+      color: white;
+      border: none;
+      padding: 16px 28px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-It opens Google, YouTube, and Discord in 3 new tabs when you click the button. You can change the links inside this part:
+    button:hover {
+      background: #4752c4;
+    }
+  </style>
+</head>
+<body>
 
-```js
-window.open("https://google.com", "_blank");
-window.open("https://google.com", "_blank");
-window.open("https://google.com", "_blank");
-window.open("https://google.com", "_blank");
-window.open("https://google.com", "_blank");
-window.open("https://google.com", "_blank");
-window.open("https://google.com", "_blank");
-window.open("https://google.com", "_blank");
-window.open("https://google.com", "_blank");
-window.open("https://google.com", "_blank");
+  <button onclick="openTabs()">Open 3 Tabs</button>
 
-```
+  <script>
+    function openTabs() {
+      window.open("https://google.com", "_blank");
+      window.open("https://google.com", "_blank");
+      window.open("https://google.com", "_blank");
+      window.open("https://google.com", "_blank");
+      window.open("https://google.com", "_blank");
+      window.open("https://google.com", "_blank");
+      window.open("https://google.com", "_blank");
+      window.open("https://google.com", "_blank");
+      window.open("https://google.com", "_blank");
+
+    }
+  </script>
+
+</body>
+</html>
